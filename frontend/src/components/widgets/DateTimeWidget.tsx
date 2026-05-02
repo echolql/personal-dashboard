@@ -15,7 +15,7 @@ export default function DateTimeWidget({ isFrameless }: { isFrameless?: boolean 
         <div className="text-2xl font-bold text-white tracking-tight drop-shadow-md">
           {time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
         </div>
-        <div className="text-xs font-medium text-slate-300 drop-shadow-md mt-1 tracking-wide">
+        <div className="text-xs font-medium text-slate-400 drop-shadow-md mt-1 tracking-wide">
           {time.toLocaleDateString([], { weekday: 'long', month: 'short', day: 'numeric' })}
         </div>
       </div>

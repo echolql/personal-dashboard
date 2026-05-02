@@ -1,0 +1,12 @@
+{
+  "name": "mydashboard-monorepo",
+  "version": "1.0.0",
+  "scripts": {
+    "lift": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:frontend": "cd frontend && npm run dev",
+    "start:backend": "go run ./cmd/server/main.go"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
